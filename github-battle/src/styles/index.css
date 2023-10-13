@@ -1,0 +1,461 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==========================custom styles=============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
+
+:root {
+  --red: rgb(222, 56, 64);
+  --gray: rgb(243, 235, 235);
+  --black: rgb(22, 24, 26);
+  --blackGray: rgb(36, 40, 42);
+  --lightskyblue: rgb(114, 193, 242);
+  --green: rgb(68, 253, 35);
+  --blue: rgb(30, 71, 251);
+  --golden: rgb(252, 191, 36);;
+}
+.red {
+  color: var(--red);
+}
+
+.black {
+  color: var(--black);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.blackGray {
+  color: var(--blackGray);
+}
+
+.sky-blue {
+  color: var(--lightskyblue);
+}
+
+.green {
+  color: var(--green);
+}
+
+.blue{
+  color: var(--blue);
+}
+
+.golden{
+  color: var(--golden);
+}
+
+/*--------------------------- flex ---------------------*/
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/*------------------------- margins--------------------- */
+.m-center {
+  margin: 0 auto;
+}
+
+.m-top-5 {
+  margin-top: 5px;
+}
+
+.m-top-10 {
+  margin-top: 10;
+}
+
+.m-top-20 {
+  margin-top: 20;
+}
+
+.m-top-30 {
+  margin-top: 30px;
+}
+
+.m-bottom-5 {
+  margin-bottom: 5px;
+}
+
+.m-bottom-10 {
+  margin-bottom: 30px;
+}
+
+.m-bottom-20 {
+  margin-bottom: 30px;
+}
+
+.m-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.m-left-15 {
+  margin-left: 15px;
+}
+
+.m-right-15 {
+  margin-right: 15px;
+}
+
+.m-right-5 {
+  margin-right: 5px;
+}
+/* ----------------------font sizes-------------------- */
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-34 {
+  font-size: 34px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+/* -----------------------container---------------------- */
+.container {
+  width: 1260px;
+  max-width: 100%;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.icons-box {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.players-box {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.player-header {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+/* icons */
+.icons-common {
+  width: 280px;
+  height: 280px;
+  border: none;
+  padding: 25px;
+  font-size: 140px;
+}
+.user-group {
+  color: rgba(240, 147, 89, 0.733);
+}
+
+.jet {
+  color: rgba(118, 116, 116, 0.526);
+}
+
+
+.player-username {
+  width: 300px;
+  height: 32px;
+}
+
+.btn-submit {
+  margin-left: 25px;
+  width: 100px;
+  height: 32px;
+  font-size: 16px;
+  background-color: rgb(244, 242, 242);
+  border: none;
+  color: rgb(196, 194, 194);
+  text-transform: uppercase;
+}
+
+.btn-active {
+  color: white;
+  background-color: rgb(17, 17, 17);
+}
+
+.card {
+  width: 450px;
+  height: 90px;
+  /* border: 1px solid red; */
+  background-color: rgb(235, 235, 235);
+  padding: 0 15px;
+}
+
+.card-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.no-border {
+  border: none;
+}
+
+.padding {
+  padding: 8px 15px;
+}
+.color-white {
+  color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+/* =================result page=================== */
+.result-card {
+  width: 300px;
+  height: 100%;
+  background-color: rgb(210, 210, 209);
+  padding: 35px;
+}
+
+.result-card-img {
+  width: 150px;
+  padding-bottom: 10px;
+}
+/* 
+.score {
+} */
+
+.login-id {
+  color: var(--red);
+}
+
+/* navbar */
+
+.navbar{
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* popular page */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  
+}
+
+.items {
+  padding: 32px;
+  height: 100%;
+  background-color: rgb(191, 255, 234);
+  border-radius: 12px;
+ 
+}
+
+
+.popular-img{
+  width: 150px;
+  height: 100%;
+}
+
+.bg-white{
+  background-color: white;
+}
+
